@@ -40,8 +40,11 @@
 mod rust_application;
 use rust_application::rust_application;
 
-pub mod gpio;
-pub mod misc;
+pub mod abstraction{
+    pub mod gpio;
+    pub mod misc;
+}
+
 
 
 /// Rust entry point for C application

@@ -65,7 +65,7 @@ pub mod gpio {
     use std::ffi::CString;
     use std::os::raw::c_char;
 
-    use crate::{log, misc::misc};
+    use crate::{log, abstraction::misc::misc};
 
     /// Structure for storing GPIO data
     /// 

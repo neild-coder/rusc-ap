@@ -5,7 +5,7 @@ BUILD_DIR=build
 
 RUST_LIB_DEBUG=target/debug/ 
 RUST_LIB_RELEASE=target/release/
-
+LIB=rust_application
 LOGGING_FLAGS=-DLOGGING=1
 
 GREEN=\033[0;32m
@@ -16,7 +16,7 @@ debug:
 	@echo "\n${GREEN}Building debug version...${NC}\n"
 	
 	cargo build 
-	$(CC) -o $(TARGET) $(LOGGING_FLAGS) $(SRC) -L$(RUST_LIB_DEBUG) -lrapplication
+	$(CC) -o $(TARGET) $(LOGGING_FLAGS) $(SRC) -L$(RUST_LIB_DEBUG) -l$(LIB)
 	
 	@echo "\n${GREEN}Building success...${NC}\n"
 	@if [ -d build ]; then \
@@ -31,7 +31,7 @@ release:
 	@echo "\n${GREEN}Building release version...${NC}\n"
 	
 	cargo build --release
-	$(CC) -o $(TARGET) -Os $(SRC) -L$(RUST_LIB_RELEASE) -lrapplication
+	$(CC) -o $(TARGET) -Os $(SRC) -L$(RUST_LIB_RELEASE) -l$(LIB)
 	
 	@echo "\n${GREEN}Building success...${NC}\n"
 	@if [ -d build ]; then \

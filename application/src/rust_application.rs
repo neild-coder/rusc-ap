@@ -34,7 +34,7 @@
 ///
 
 use crate::log;
-use crate::gpio::gpio::GpioResource;
+use crate::abstraction::gpio::gpio::GpioResource;
 
 use std::io;
 
