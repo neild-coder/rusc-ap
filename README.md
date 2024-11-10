@@ -34,7 +34,7 @@ The module gets built and generates ``` .ko ``` object in the build folder in th
 
 Devices that gets created can be seen in ``` /dev/ ``` path.
 
-GPIO pins that needs to be used can be set in the device tree file (dt folder). Refer <a>https://github.com/torvalds/linux/blob/master/include/dt-bindings/gpio/gpio.h</a> and <a>https://www.kernel.org/doc/Documentation/devicetree/bindings/gpio/gpio.txt</a> for more information on pin cofiguration.
+GPIO pins that needs to be used can be set in the device tree file (dt folder). Refer <a>https://www.kernel.org/doc/Documentation/devicetree/bindings/pinctrl/</a> for more information on pin configuration.
 
 * **Building the application**:
 ```
