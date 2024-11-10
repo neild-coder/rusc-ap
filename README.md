@@ -44,6 +44,8 @@ make release   # to run application without logs
 ```
 The binary gets generated into the build folder. Currently a test application is wrriten named as rust_application. 
 
+* **Pin Mapping**: Pin mappings can be changed using *gpio-mapping.json* file in *application/mapping* folder.
+
 ## To do
 * UART binder
 * I2C binder
