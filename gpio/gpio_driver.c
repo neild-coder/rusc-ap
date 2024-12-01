@@ -387,6 +387,6 @@ static struct platform_driver rust_gpio_driver = {
 
 module_platform_driver(rust_gpio_driver);
 
-MODULE_LICENSE("GPLv3");
+MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Neil Derick");
 MODULE_DESCRIPTION("A C-Rust GPIO driver");
